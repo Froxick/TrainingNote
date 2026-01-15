@@ -1,7 +1,7 @@
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { Training } from '../../types';
 import Ionicons from '@expo/vector-icons/Ionicons';
-import { formatDateToDMY } from '@/utils/DateUtil';
+
 import { ColorsType } from '@/constants/theme';
 import { getRpeColor } from '@/utils/getRpeColor';
 import { getRIRColor } from '@/utils/getRIRColor';
@@ -98,9 +98,9 @@ export const TrainingCard = ({training, onDelete, themeColor,openEditMenu}: Trai
                     {training.exercise}
                 </Text>
 
-                <Text style={styles.dateText}>
+                {/* <Text style={styles.dateText}>
                     {formatDateToDMY(training.date)}
-                </Text>
+                </Text> */}
 
                 <View style={styles.content}>
                    
